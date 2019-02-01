@@ -1,7 +1,7 @@
 package s4.spring.td0.models;
 
 public class Element {
-	private String nom;
+	private String nom="";
 	private int evaluation;
 	public String getNom() {
 		return nom;

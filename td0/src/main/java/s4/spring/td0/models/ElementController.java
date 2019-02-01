@@ -19,10 +19,10 @@ public class ElementController {
 	}
 	
 	@RequestMapping("/")
-	public String index(@ModelAttribute("elements") List<Element> elements) {
+	public String indexElement(@ModelAttribute("elements") List<Element> elements) {
 		Element e = new Element();
 		e.setNom("Test");
 		elements.add(e);
-		return "index";
+		return "indexElement";
 	}
 }

@@ -1,6 +1,13 @@
-<h1>Elements</h1>
+{{> header}}
+
+<h1>Items</h1>
 <ul>
 	{{#elements}}
 	<li>{{nom}}</li>
 	{{/elements}}
 </ul>
+<a href="items/new" class="ui primary button">
+  Ajouter Item
+</a>
+
+{{> footer}}
