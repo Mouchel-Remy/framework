@@ -1,0 +1,4 @@
+package s4.spring.repository;
+
+public interface OrgasRepository extends JpaRepository<Organisation,Integer>{
+}

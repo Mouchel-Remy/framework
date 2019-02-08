@@ -1,0 +1,10 @@
+package s4.spring.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Organization {
+	@Id
+	@GenerateValue(strategy=GenerationType.AUTO);
+	
+}

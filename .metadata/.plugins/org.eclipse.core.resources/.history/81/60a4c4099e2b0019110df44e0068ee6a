@@ -1,0 +1,5 @@
+package s4.spring.repository;
+
+public class OrgasRepository {
+
+}

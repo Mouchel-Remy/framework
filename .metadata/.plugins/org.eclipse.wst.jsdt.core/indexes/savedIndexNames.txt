@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+\\calebasse\21708470\Documents\2A\S4\Framework\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1896617395.index
+2548577003.index
+369101763.index
+1307427299.index
+4264962848.index
