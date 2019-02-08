@@ -1,0 +1,8 @@
+package s4.spring.TD2.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class User {
+	private int id;
+}

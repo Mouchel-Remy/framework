@@ -1,0 +1,6 @@
+package s4.spring.TD2.entities;
+
+@Entity
+public class User {
+
+}
