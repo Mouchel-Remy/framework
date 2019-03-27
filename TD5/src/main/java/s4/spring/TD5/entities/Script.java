@@ -70,6 +70,30 @@ public class Script {
 		return "Script [id=" + id + ", title=" + title + ", description=" + description + ", content=" + content
 				+ ", creationDate=" + creationDate + "]";
 	}
+	public Language getLanguage() {
+		return language;
+	}
+	public void setLanguage(Language language) {
+		this.language = language;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	public List<History> getHistorys() {
+		return historys;
+	}
+	public void setHistorys(List<History> historys) {
+		this.historys = historys;
+	}
 	
 	
 	

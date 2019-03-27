@@ -1,16 +1,49 @@
 {{>header}}
 
-	<h2>Se connecter</h2></br>
-	<form class="ui form" method="post" action="/user/login">
-  <div class="field">
-    <label>E-mail</label>
-    <input type="text" name="mail" placeholder="XXX@XX.FR">
-  </div>
-  <div class="field">
-    <label>Password</label>
-    <input type="text" name="motdepasse" placeholder="MDP">
-  </div>
-  <button class="ui button" type="submit">Login</button>
-</form>
+	<h1 class="ui blue header">Accueil</h1>
+	
+
+	<h2 class="ui blue header">Bonjour {{user.identity}}</h2>
+	<h4 class="ui blue header">Votre email est : {{user.email}}</h4>
+	<table class="ui celled table">
+  <thead>
+    <tr><th>Titre</th>
+    <th>Description</th>
+    <th>Content</th>
+    <th>Date de Création</th>
+    <th>Actions</th>
+  </tr></thead>
+  <tbody>
+  {{#scripts}}
+    <tr>
+      <td data-label="Titre">{{title}}</td>
+      <td data-label="Description">{{description}}</td>
+      <td data-label="Content">{{content}}</td>
+      <td data-label="Date de Création">{{creationDate}}</td>
+      <td data-label="Actions" style="text-align:center">
+		<button class="circular ui icon button">
+  			<i class="edit icon"></i>
+		</button>
+		<button class="circular ui icon button">
+  			<i class="trash alternate icon"></i>
+		</button>
+	  </td>
+    </tr>
+    {{/scripts}}
+  </tbody>
+</table>
+
+	<a href="/script/new" >
+		<button class="ui primary button">
+  			<i class="plus icon"></i>
+		</button>
+	</a>
+
+	<a href="/logout" >
+		<button class="ui secondary button">
+  			Déconnexion
+		</button>
+	</a>
+	
 	
 {{>footer}}
