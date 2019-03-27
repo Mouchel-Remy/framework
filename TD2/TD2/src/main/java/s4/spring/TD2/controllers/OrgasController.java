@@ -4,7 +4,10 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -22,6 +25,8 @@ public class OrgasController {
 	@Autowired
 	private GroupeRepository groupeRepo;
 	
+	
+	
 	@RequestMapping("create")
 	@ResponseBody // PAS BESOIN DE VUE JE RETOURNE DIRECTEMENT SUR LE NAVIGATEUR
 	public String createOrgas() {
@@ -33,6 +38,7 @@ public class OrgasController {
 		orgasRepo.save(organisation);
 		return organisation+" ajoutée dans la BDD,";
 	}
+	
 	
 	@RequestMapping("groupes")	
 	@ResponseBody
@@ -57,5 +63,22 @@ public class OrgasController {
 		}
 		return "Organisation inexistante";
 	}
-
+	
+	@PostMapping("create")
+	public Organization post(@RequestBody Organization orga) {
+		return orgasRepo.saveAndFlush(orga);
+	}
+	@GetMapping("")
+	public void update() {
+	}
+	
+	@GetMapping("{id}")
+	public void get() {
+		
+	}
+	
+	@GetMapping("delete")
+	public void delete() {
+		
+	}
 }

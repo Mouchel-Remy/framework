@@ -3,3 +3,4 @@
 1549630117295	Rename package 's4.spring.repository'
 1549630128980	Rename package 's4.spring.entities'
 1549630136518	Rename package 's4.spring.controllers'
+1549635175846	Encapsulate field 'firstName'
